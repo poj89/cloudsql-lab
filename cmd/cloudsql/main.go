@@ -30,7 +30,11 @@ func run(args []string, output io.Writer) error {
 		if len(args) != 2 {
 			return errors.New("usage: cloudsql create <name>")
 		}
-		if err := store.Create(instance.Instance{Name: args[1]}); err != nil {
+		if err := store.Create(instance.Instance{
+			Name:   args[1],
+			Engine: "postgres16",
+			Status: "CREATED",
+		}); err != nil {
 			return err
 		}
 		_, err := fmt.Fprintf(output, "Created instance %q\n", args[1])
@@ -47,11 +51,24 @@ func run(args []string, output io.Writer) error {
 			_, err := fmt.Fprintln(output, "No instances found.")
 			return err
 		}
-		if _, err := fmt.Fprintln(output, "NAME"); err != nil {
+		if _, err := fmt.Fprintf(
+			output,
+			"%-20s %-15s %-15s\n",
+			"NAME",
+			"ENGINE",
+			"STATUS",
+		); err != nil {
 			return err
 		}
+
 		for _, item := range instances {
-			if _, err := fmt.Fprintln(output, item.Name); err != nil {
+			if _, err := fmt.Fprintf(
+				output,
+				"%-20s %-15s %-15s\n",
+				item.Name,
+				item.Engine,
+				item.Status,
+			); err != nil {
 				return err
 			}
 		}

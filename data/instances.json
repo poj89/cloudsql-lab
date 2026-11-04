@@ -1,1 +1,17 @@
-[]
+[
+  {
+    "name": "prod-db",
+    "engine": "postgres16",
+    "status": "CREATED"
+  },
+  {
+    "name": "dev-db",
+    "engine": "postgres16",
+    "status": "CREATED"
+  },
+  {
+    "name": "test-db",
+    "engine": "postgres16",
+    "status": "CREATED"
+  }
+]

@@ -4,7 +4,9 @@ import "fmt"
 
 // Instance is the metadata Phase 1 stores for a PostgreSQL instance.
 type Instance struct {
-	Name string `json:"name"`
+	Name   string `json:"name"`
+	Engine string `json:"engine"`
+	Status string `json:"status"`
 }
 
 // Validate checks that the name is safe to use as a future Podman container name.
