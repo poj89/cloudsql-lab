@@ -25,19 +25,18 @@ Rather than starting multiple unrelated projects, I am building one project that
 Each milestone introduces a new concept while reinforcing previous lessons.
 
 ```text
-Collect metrics
-    ↓
-Store metrics
-    ↓
-Query metrics
-    ↓
-Expose metrics
-    ↓
-Containerize solution
-    ↓
-Operate platform
+Collect Metrics
+       ↓
+Store Metrics
+       ↓
+Query Metrics
+       ↓
+Expose Metrics
+       ↓
+Containerize Solution
+       ↓
+Operate Platform
 ```
-
 
 # Journey Map
 
@@ -52,6 +51,10 @@ Operate platform
           ↓
 ✅ SSH-Based Deployment
           ↓
+✅ Podman Machine
+          ↓
+✅ PostgreSQL Container
+          ↓
 🔜 PostgreSQL Persistence
           ↓
 🔜 Historical Reporting
@@ -65,8 +68,7 @@ Operate platform
 🔜 Automated Testing
 ```
 
-
-**Current Status**
+## Current Status
 
 ```text
 ✅ PostgreSQL Container Running
@@ -81,7 +83,6 @@ Current Focus
 ```
 
 The objective is not simply to learn Go, PostgreSQL, or Podman individually. The goal is to understand how applications, databases, containers, APIs, and operational workflows fit together to form a complete platform.
-
 
 ## Current Development Workflow
 
@@ -121,7 +122,13 @@ Topics:
 - SSH workflows
 - System monitoring
 - Go applications
-- Real-world troubleshooting
+- Platform engineering concepts
+
+Detailed roadmap and implementation notes:
+
+```text
+labs/raspberry-pi/
+```
 
 ### Platform Engineering Labs
 
@@ -220,7 +227,7 @@ Future roadmap:
 
 ### Milestone 2
 
-Store collected metrics in PostgreSQL.
+Persist collected metrics in PostgreSQL.
 
 ```text
 Health Monitor
@@ -290,16 +297,34 @@ Operate a complete monitoring platform.
 go build -o cloudsql.exe ./cmd/cloudsql
 ```
 
-
-
 ## Future Milestone: Automated Testing
 
+Current state:
+
+```text
+go test ./...
+    ↓
+[no test files]
+```
+
+Future state:
+
+```text
+Go Unit Tests
+       ↓
+Integration Tests
+       ↓
+GitHub Actions Validation
+```
+
 Topics:
-- _test.go files
+
+- `_test.go` files
 - Unit tests
 - Table-driven tests
 - Testing database code
 - GitHub Actions integration
 
 Goal:
-Replace "[no test files]" with meaningful automated tests that validate application behavior.
+
+Build confidence in the platform by verifying application behavior through automated tests and GitHub Actions.
