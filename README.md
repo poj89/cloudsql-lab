@@ -38,6 +38,34 @@ Containerize solution
 Operate platform
 ```
 
+
+# Journey Map
+
+```text
+✅ Go Fundamentals
+          ↓
+✅ JSON Persistence
+          ↓
+✅ CLI Development
+          ↓
+✅ Raspberry Pi Monitoring
+          ↓
+✅ SSH-Based Deployment
+          ↓
+🔜 PostgreSQL Persistence
+          ↓
+🔜 Historical Reporting
+          ↓
+🔜 REST API
+          ↓
+🔜 Podman Containerization
+          ↓
+🔜 Platform Operations
+          ↓
+🔜 Automated Testing
+```
+
+
 ## Current Development Workflow
 
 ```text
@@ -244,3 +272,17 @@ Operate a complete monitoring platform.
 ```powershell
 go build -o cloudsql.exe ./cmd/cloudsql
 ```
+
+
+
+## Future Milestone: Automated Testing
+
+Topics:
+- _test.go files
+- Unit tests
+- Table-driven tests
+- Testing database code
+- GitHub Actions integration
+
+Goal:
+Replace "[no test files]" with meaningful automated tests that validate application behavior.
