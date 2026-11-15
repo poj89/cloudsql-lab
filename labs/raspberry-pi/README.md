@@ -358,6 +358,10 @@ Package the application and database as containers.
 Container architecture:
 
 ```text
+Windows
+    ↓
+Podman Machine (cloudsql-lab)
+    ↓
 Podman
 ├── health-monitor
 └── postgres

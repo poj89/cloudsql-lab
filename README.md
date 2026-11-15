@@ -215,6 +215,10 @@ GET /metrics
 Containerize the application using Podman.
 
 ```text
+Windows
+    ↓
+Podman Machine (cloudsql-lab)
+    ↓
 Podman
 ├── health-monitor
 └── postgres
