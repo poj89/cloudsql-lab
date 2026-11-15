@@ -7,7 +7,7 @@ A learning project focused on Go, PostgreSQL, Podman, and cloud database automat
 - Simulate Cloud SQL operations
 - Practice testing and CI/CD
 - Explore concurrency patterns
-- Build a portfolio-quality project
+- Build solutions on Raspberry Pi 3B+ (limited resources scenarios)
 
 # Phase 1: JSON-backed instance registry
 
