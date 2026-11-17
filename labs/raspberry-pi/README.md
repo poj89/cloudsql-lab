@@ -65,9 +65,9 @@ The Raspberry Pi labs follow a deliberate progression from a simple Go command-l
 │ Phase 2                   │
 │ Data Persistence          │
 ├───────────────────────────┤
-│ 🔜 PostgreSQL Container   │
-│ 🔜 health_metrics Table   │
-│ 🔜 Metric Storage         │
+│ ✅ PostgreSQL Container   │
+│ ✅ health_metrics Table   │
+│ ✅ Manual Metric Storage  │
 └─────────────┬─────────────┘
               │
               ▼
@@ -126,12 +126,13 @@ The Raspberry Pi labs follow a deliberate progression from a simple Go command-l
 ✅ Health Monitor Working
 ✅ Podman Machine Running
 ✅ PostgreSQL Container Running
+✅ Created health_metrics table
+✅ Stored metrics in PostgreSQL
+✅ Queried historical metrics
 
 Current Focus
     ↓
-🔜 Create health_metrics table
-🔜 Store metrics in PostgreSQL
-🔜 Query historical metrics
+🔜 Automate metric insertion from Go
 ```
 
 The goal is not simply to learn Go, PostgreSQL, or Podman individually.
