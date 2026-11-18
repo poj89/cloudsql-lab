@@ -117,6 +117,7 @@ The Raspberry Pi labs follow a deliberate progression from a simple Go command-l
 │ 🔜 Go Unit Tests          │
 │ 🔜 Integration Tests      │
 │ 🔜 GitHub Actions Tests   │
+│ 🔜 CI/CD Automation       │
 └───────────────────────────┘
 ```
 

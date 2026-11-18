@@ -317,6 +317,8 @@ Go Unit Tests
 Integration Tests
        ↓
 GitHub Actions Validation
+       ↓
+CI / CD Automation
 ```
 
 Topics:
